@@ -1,19 +1,10 @@
 <template>
-    <div class="flex border-b border-40">
-        <div class="w-1/4 py-4">
-            <slot>
-                <h4 class="font-normal text-80">
-                    {{ label }}
-                </h4>
-            </slot>
-        </div>
-        <div class="w-3/4 py-4">
-            <slot name="value">
+    <PanelItem :field="field">
+        <template #value>
                 <p class="text-90" :title="this.field.value" :aria-label="this.field.value">{{ getOptionLabel(value) }}</p>
                 <span v-if="hasOptionHint(value)" class="radio-hint mt-1 block text-sm text-80 leading-normal">{{ getOptionHint(value) }}</span>
-            </slot>
-        </div>
-    </div>
+        </template>
+    </PanelItem>
 </template>
 
 <script>

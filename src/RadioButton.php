@@ -3,10 +3,13 @@
 namespace OwenMelbz\RadioField;
 
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\SupportsDependentFields;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class RadioButton extends Field
 {
+    use SupportsDependentFields;
+
     /**
      * The field's component.
      *
