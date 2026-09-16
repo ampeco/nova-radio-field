@@ -11,11 +11,9 @@
         "nova:install": "npm --prefix='../../vendor/laravel/nova' ci"
     },
     "devDependencies": {
-        "@inertiajs/inertia": "^0.11.0",
         "@vue/babel-plugin-jsx": "^1.1.1",
-        "axios": "^0.26.1",
+        "axios": "^1.18.1",
         "cross-env": "^7.0.3",
-        "form-backend-validation": "^2.4.0",
         "laravel-mix": "^6.0.43",
         "postcss": "^8.4.12",
         "prettier": "^2.6.2",
